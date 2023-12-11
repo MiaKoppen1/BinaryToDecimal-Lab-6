@@ -1,20 +1,25 @@
-#ifndef BINTODEC
-#define BINTODEC
+#ifndef BINTODEC_H
+#define BINTODEC_H
+
 #include <string>
-#include <bitset>
 #include <fstream>
 #include <iostream>
 
-class BinToDec //class created
-	{
-	private:
+class BinToDec 
+    {
+    private:
+    //not needed for this program
 
+    public:
 
-	public:
-		static void convBinToDec(const std::string& filename);
-		void createColumn();
-		void processFile(std::ifstream& inputFile);
-		
-	};
+    // Static function to convert binary to decimal from a file
+    static void convBinToDec(const std::string& filename);
+    // Static function to create the column headings
+    static void createColumn();
+    // Static function to process the binary file and convert to decimal
+    static void processFile(std::ifstream& inputFile);
 
-#endif // !BINTODEC
+    };
+
+#endif // BINTODEC_H
+
